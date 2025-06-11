@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>travels</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    </head>
+
+    <body>
+        <script type="text/javascript" src="myjs.js" defer> </script>
+            <nav class="navbar">
+              <h1 class="logo"><span>My</span>Travels</h1>
+                <ul class="nlink">
+                    <li><a href="index.html" id="mylinkcolor">Home</a></li>
+                    <li><a href="#about" id="mylinkcolor">About</a></li>
+                    <li><a href="#packages" id="mylinkcolor">Package</a></li>
+                    <li><a href="#bookings" id="mylinkcolor">Bookings</a></li>
+                    <li><a href="#contact" id="mylinkcolor">Contact</a></li>
+                </ul>
+                <img src="mlogo2.png" alt="" class="mbtn">
+             </nav> 
+             
+      <header class="headerarea">
+           <div class="header-cont">
+              <h1 id="div1"><span class="text"></span></h1>
+              <br>
+              <h2>Visit <span class="changetext"></span></h2><br>
+              <h4>Explore the World</h4><br>
+              <a href="#bookings" id="mydivcolor">Book Now</a>
+           </div>
+       </header>
+
+   <main>
+          <section class="about" id="about">
+              <div id="mytitlecolor">
+                <h3>ABOUT US</h3>
+                  <div class="line"></div>  </div>
+                  <div class="row">
+                    <div class="col imgcol">
+                      <div class="primg">
+                       <img class="fill" src="images\img6.webp" alt="">
+                    </div></div>
+                 
+                    <div class="col cntcol">
+                    <div id="effects">
+                      <br>Travelling website helps in  booking your tickets to your selected destination, it requires the user details which is required for booking.
+                        This is a sample booking website demonstrating the html, css, javascript, jquery, typescript and mysql functionality. 
+                      </div></div></div>
+          </section>
+
+             <section class="packages" id="packages">
+            <div id="mytitlecolor">
+                <h3>OUR PACKAGES</h3>
+                <div class="line"></div>  </div>
+                <div class="gridcnt">
+                    <div class="resp">
+                        <div class="pictures">
+                        <a target="_blank" href="images\img1.webp">
+                        <img src="images\img1.webp" alt="" width="350" height="300"></a>
+                    <div class="content">
+                        <h4>India</h4>
+                        <a href="#bookings">Book Now</a>
+                            <p>Taj Mahal is located in India and is known as one of the seven wonders of the world.</p>
+                    </div></div></div>
+
+                    <div class="resp">
+                        <div class="pictures">
+                        <a target="_blank" href="images\img2.webp">
+                        <img src="images\img2.webp" alt="" width="350" height="300"></a>
+                    <div class="content">
+                        <h4>Eygpt</h4>
+                        <a href="#bookings">Book Now</a>
+                        <p>Pyramids are located in Egypt, experience the view and book now</p>
+                    </div></div></div>
+
+                    <div class="resp">
+                        <div class="pictures">
+                        <a target="_blank" href="images\img3.avif">
+                        <img src="images\img3.avif" alt="" width="350" height="300"></a>
+                    <div class="content">
+                        <h4>Australia</h4>
+                        <a href="#bookings">Book Now</a>
+                        <p>Australia has many wonderful places to visit so book now and enjoy the trip</p>
+                    </div></div></div> 
+
+                    <div class="resp">
+                        <div class="pictures">
+                            <a target="_blank" href="images\img4.avif">
+                                <img src="images\img4.avif" alt="" width="350" height="300"></a>
+                            <div class="content">
+                                <h4>Turkey</h4>
+                        <a href="#bookings">Book Now</a>
+                        <p>Turkey is a awsome place to visit with many beautiful locations</p>
+                    </div></div></div>
+                    
+                    <div class="resp">
+                        <div class="pictures">
+                            <a target="_blank" href="images\img7.jpg">
+                                <img src="images\img7.jpg" alt="" width="350" height="300"></a>
+                            <div class="content">
+                                <h4>Italy</h4>
+                        <a href="#bookings">Book Now</a>
+                        <p>Italy is a great destination place to visit with many ancient buildings</p>
+                    </div></div></div>
+
+                    <div class="resp">
+                        <div class="pictures">
+                            <a target="_blank" href="images\img5.webp">
+                                <img src="images\img5.webp" alt="" width="350" height="300"></a>
+                                <div class="content">
+                                <h4>Beach</h4>
+                        <a href="#bookings">Book Now</a>
+                        <p>we have many beautiful beach spots for our travellers.</p>
+                    </div></div></div>
+</div>
+        </section>
+      
+          <section class="bookings" id="bookings">
+            <div id="mytitlecolor">
+                <h3> <br>BOOK YOUR TRIP</h3>
+                <div class="line"></div> </div>
+               
+           <form action="/handleform" method="post" class="book-form">
+            <div class="flex">
+                <div class="inputbox">
+                    <span> User_Id :</span>
+                    <input type="text" placeholder="enter your user_id" name="user_id" required>
+                </div>
+                <div class="inputbox">
+                    <span> Name :</span>
+                    <input type="text" placeholder="enter your name" name="name" required>
+                </div>
+                <div class="inputbox">
+                    <span>Email :</span>
+                    <input type="email" placeholder="enter your email id" name="email" required>
+                </div>
+                <div class="inputbox">
+                    <span> Contact :</span>
+                    <input type="tel" placeholder="enter your phone number" name="contact" required>
+                </div>
+                <div class="inputbox">
+                    <span> Address :</span>
+                    <input type="text" placeholder="enter your address" name="address" required>
+                </div>
+                <div class="inputbox">
+                    <span> Destination :</span>
+                    <select id="dest" name="dest" required>
+                        <option value="India">India</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Australia">Australia</option>
+                    </select> </div>
+                    <div class="inputbox">
+                        <span> Departure :</span>
+                        <input type="date" name="dep" required>
+                    </div>
+                <div class="inputbox">
+                    <span> Arrival :</span>
+                    <input type="date" name="arrival" required>
+                </div>       </div>
+                <input type="submit" value="Submit" class="btn" name="send">
+                <input type="reset" class="btn">    
+            </form>
+        </section> 
+      
+        <section class="contact" id="contact">
+            <div id="mytitlecolor">
+                <h3> <br>CONTACT US</h3>
+                <div class="line"></div> </div>
+                <form action="/handleform" method="post" class="feedback-form">
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>Email :</span>
+                            <input type="email" placeholder="enter your email id" name="email" required>
+                        </div>
+                        
+                        <div class="inputbox">
+                            <span> Feedback :</span><br>
+                            <textarea id="feedback" name="feedback" placeholder="Enter your feedback here.."></textarea>
+                        </div>
+                         </div>
+                        <input type="submit" value="Submit" class="btn" name="send">
+                        </form>
+        </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</main>
+
+<footer>
+        <h1> &copy; Afifa Aiman</h1><br>
+        <address>This is a sample website <br>
+          used for project demonstration.</address>
+</footer>
+
+    </body>
+</html>

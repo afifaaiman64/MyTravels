@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.32"
+  }
+}

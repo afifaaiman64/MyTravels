@@ -1,0 +1,496 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  ul{
+    list-style: none;
+  }
+  
+  body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas: 
+    "navbar" 
+    "headerarea"
+    "main"
+    "footer";
+  }
+  
+  nav{
+    grid-area: navbar;
+    top: 0;
+    }
+   .navbar{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1em;
+    color: black;
+    background-color: whitesmoke;
+   } 
+  
+  .nlink{
+    display: flex;
+    align-items: center;
+  }
+  .nlink li{
+    margin: 0 30px;
+  }
+  #mylinkcolor{
+    padding: 10px;
+    text-decoration: none;
+    color: red;
+    animation: mylicolor 5s infinite;
+  }
+
+  li a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 3vmin;
+  }
+  
+  @keyframes mylicolor {
+    from {color: red;}
+    to {color: blue;}
+  }
+  header{
+    grid-area: headerarea;
+    
+  }
+  .headerarea{
+    height:100vh;
+    background-image: url('imgbg.jpg');
+    background-position: bottom;
+    background-size:cover;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+  }
+  .logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+  }
+  .logo span{
+    color: rgb(13, 102, 203);
+  }
+
+  .header-cont{
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 5vmin;
+    font-family: Georgia;
+    margin-left: 90px;
+    margin-right:250px ;
+  }
+.changetext::after{
+    content: '';
+    color: blue;
+    animation: ct 10s infinite linear;
+  }
+  @keyframes ct{
+    0%{content: "India";}
+    10%{content: "China";}
+    20%{content: "Turkey";}
+    30%{content: "Italy";}
+    40%{content: "Spain";}
+  }
+  .header-cont span{
+    padding: 10px;
+    text-decoration: none;
+    color: red;
+    animation: mytxtcolor 5s infinite;
+  }
+  @keyframes mytxtcolor {
+    from {color: red;}
+    to {color: blue;}
+  }
+  
+  #mydivcolor{
+    padding: 8px 15px;
+    background: rgb(11, 171, 230);
+    font-size: 4vmin;
+    border-radius: 20px;
+
+    width: 150px;
+    text-align: center;
+
+      text-decoration: none;
+      color:white;
+      animation: mycolor 5s infinite;
+  }
+  @keyframes mycolor {
+    from {background-color: rgb(11, 171, 230);}
+    to {background-color: rgb(255, 0, 157);}
+  }
+  
+  .mbtn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  .btn{
+    padding: 4px 10px;
+    background: rgb(4, 100, 178);
+    font-size: 3vmin;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .pbtn{
+    padding: 4px 10px;
+    background: rgb(4, 100, 178);
+    font-size: 3vmin;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  main{
+    grid-area: main;
+  }
+  section{
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px;
+  }
+  #mytitlecolor{
+    text-align: center;
+    font-size: 5vmin;
+    text-decoration: none;
+    color: red;
+    animation: myticolor 5s infinite;
+  }
+  @keyframes myticolor {
+    from {color: red;}
+    to {color: blue;}
+  }
+  
+   #mytitlecolor p{
+    font-size: 3vmin;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+  .line{
+    width: 150px;
+    height: 4px;
+    background: rgb(33, 96, 211);
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+
+ /*about*/
+  .row{
+    margin: 10px;
+    display: flex;
+    align-items: left;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .about .row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 20px auto;
+    width: 50%;
+  }
+  
+  .about .primg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+  .fill {object-fit: fill;}
+  .primg img{
+  width: 500px;
+  height: 350px;
+  padding: 15px;
+  border-radius: 60%;
+  }
+  .col .cntcol{
+    width: 40%;
+  }
+ #effects{
+  font-size: 3vmin;
+  font-style: italic;
+  font-weight: 600;
+ }
+  .cntcol p{
+    font-size: 3vmin;
+  }
+  .col .imgcol{
+    width: 50%;
+  }
+
+  /*package*/
+  .packages .pictures .content{
+    padding: 10px;
+    text-align: center;
+  }
+  .packages .pictures .content h4{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .packages .pictures .content a{
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(9, 116, 203);
+    color: white;
+    border-radius: 5px;
+  }
+  .packages .pictures .content p{
+    margin: 15px;
+    text-align: center;
+    display: none;
+  }
+  .packages .gridcnt.exp{
+    display: none;
+  }
+  .packages .btn{
+    margin-left: 500px;
+    margin-top: 20px;
+  }
+  .gridcnt{
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit,minmax(350px, 1fr));
+    gap:5px;
+    justify-content: center;
+    margin-top: 60px;
+    } 
+    .responsive {
+      padding: 0 5px;
+      float: left;
+      width: 24%;
+    }
+    .pictures{
+      margin: 5px;
+      border: 1px solid;
+      float: left;
+      width: 350px;
+    }
+  
+  div.pictures:hover
+  {
+     border: 1px solid;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 15%;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 35%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  /*booking*/
+  .bookings .book-form{
+    margin-top: 80px;
+    padding: 2rem;
+    background: rgb(184, 206, 240);
+  }
+  .bookings .book-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+  }
+  .bookings .book-form .flex .inputbox{
+    flex: 1 1 41rem;
+  }
+  .bookings .book-form .flex .inputbox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 20px;
+    color: black;
+    text-transform: none;
+    margin-top: 1.1rem;
+    border: black;
+   }
+   /*.bookings .book-form .flex .inputbox input:focus{
+    background: rgb(190, 217, 240);
+    color: white;
+   }*/
+   .bookings .book-form .flex .inputbox input:focus::placeholder{
+    color: rgb(197, 212, 225);
+   }
+   .bookings .book-form .flex .inputbox select{
+    width: 80%;
+  padding: 16px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+   }
+   .bookings .book-form .flex .inputbox span{
+    font-size: 20px;
+    color: black;
+   }
+   .bookings .book-form .btn{
+    margin-top: 2rem;
+   }
+
+ /*contact*/
+ .contact .feedback-form{
+    margin-top: 80px;
+    padding: 2rem;
+    background: rgb(158, 174, 215);
+  }
+  .contact .feedback-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+  }
+  .contact .feedback-form .flex .inputbox{
+    flex: 1 1 41rem;
+  }
+  .contact .feedback-form .flex .inputbox textarea{
+    width: 100%;
+    height: 300px;
+    float: right;
+    font-size: 20px;
+    color: black;
+    text-transform: none;
+    margin-top: 1.1rem;
+    border: black;
+  }
+  .contact .feedback-form .flex .inputbox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 20px;
+    color: black;
+    text-transform: none;
+    margin-top: 1.1rem;
+    border: black;
+   }
+   .contact .feedback-form .flex .inputbox span{
+    font-size: 20px;
+    color: black;
+   }
+   .contact .feedback-form .btn{
+    margin-top: 2rem;
+   }
+
+  footer{
+    grid-area: footer;
+    text-align: left;
+    background: rgb(10, 62, 152);
+    color:white;
+    padding: 2em;
+  }
+
+  /* for moblie*/
+  @media(max-width: 800px){
+    body{
+        grid-template-columns: 1fr;
+    }
+  }
+  @media(max-width: 800px){
+    .headerarea{
+        background-position: 50%;
+    }
+   
+  }
+  @media only screen and (max-width:880px){
+    .row{
+        flex-direction: column;
+      }
+      .row .col{
+        margin: 20px auto;
+      }
+      .about .col{
+        width: 100%;
+      }
+      .primg{
+        justify-content: center;
+        align-items: center;
+      }
+      .primg img{
+        width: 100%;
+      }
+  }
+  @media only screen and (max-width:800px) {
+    .mbtn{
+      display: block;
+    }
+    .navbar{
+      padding: 0;
+    }
+    .nlink{
+      flex-direction: column;
+      width: 100%;
+      height: 50vh;
+      justify-content: center;
+      background: whitesmoke;
+      margin-top: -900px;
+      transition: all 0.5s ease;
+    }
+    .logo{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+    .mobmenu{
+      margin-top: 0px;
+    }
+    
+    .nlink li{
+      margin: 30px auto;
+    }
+    .row{
+        flex-direction: column;
+      }
+      .row .col{
+        margin: 20px auto;
+      }
+      .about .col{
+        width: 100%;
+      }
+      .primg{
+        justify-content: center;
+        align-items: center;
+      }
+      .primg img{
+        width: 100%;
+      }
+    .footer{
+      padding: 10px;
+    }
+    
+    
+  }
+  
+  
+  
